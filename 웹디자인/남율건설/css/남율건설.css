@@ -280,9 +280,25 @@ footer{
     font-size: 16px;
     line-height: 50px;
 }
+.btmenu li>a{
+    float: right;
+    width: 100px;
+    display: inline-block;
+    color: #ffffff;
+}
+.btmenu li>a:hover{
+    font-weight: bold;
+}
 .fam{
     float: right;
     height: 50px;
     width: 300px;
+}
+.fam select{
+    float: right;
+    height: 30px;
+    width: 280px;
+    margin-right: 10px;
+    font-size: 14px;
 }
 
