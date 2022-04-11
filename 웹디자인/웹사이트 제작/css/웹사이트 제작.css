@@ -15,6 +15,17 @@ header{height: 150px;}
 .logo{height: 100px; overflow: hidden; float: left;} /* 로고 */
 .logo>a>img{width: 250px; margin-top: -50px;}
 
+nav{float: right; margin-top: 30px; padding: 10px;}/*메뉴 시작 */
+.nav{width: 600px; height: 20px;}
+.nav>li{float: left; width: 200px; text-align: center; 
+    position: relative; transition: all 0.4s; padding: 5px 0;}
+.nav>li:hover{background-color: #4298cc; color: #fff;}/*메뉴 끝*/
+
+.submenu{display: none; background-color: rgba(255,255,255,0.8);position: absolute;
+    z-index: 1;width: 100%; margin-top: 5px; }/*서브메뉴 시작*/
+.submenu>li{padding: 5px 0; transition: all 0.4s; color: #000; }
+.submenu>li:hover{background-color: #00ccff;color: inherit;}/*서브메뉴 끝*/
+
 #imgslide{
     margin-top: 10px;
     height: 40px;
