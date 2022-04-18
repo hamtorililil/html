@@ -17,3 +17,8 @@ function slide(){
     $(".imgs>img").eq(now-1).css({"margin-left":"-2000px"});
     $(".imgs>img").eq(now).css({"margin-left":"0px"});
 }
+
+var win;
+function winOpen(){
+ win = window.open('contact.html','child','toolbar = no, location= no ,status = no, menubar = no, resizable = no, scrollbars = no, width = 500, height = 300')
+};
