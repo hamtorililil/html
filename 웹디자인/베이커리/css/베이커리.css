@@ -74,6 +74,31 @@ nav{
 #imgslide{
     height: 400px;
 }
+.imgs{
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    background-color: #bb692d;
+}
+.imgs>img{
+    width: 100%;
+    position: absolute;
+    transition: all 2s;
+}
+.welcome{
+    position: absolute;
+    margin: -50px 0 0 -150px !important;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    line-height: 50px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    left: 50%;
+    top: 50%; 
+}
+.welcome h1 span{color: #bb692d;}
+.welcome h3 span{color: #6a6a6a;}
 #contents{
     height: 500px;
 }
