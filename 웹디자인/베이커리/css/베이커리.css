@@ -147,6 +147,49 @@ nav{
 .partner_info img:nth-child(2){
     width: 40%;cursor: pointer;
 }
+#partner_up{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background:rgba(0,0,0,0.6);
+    z-index: 1;
+    display: none;
+    opacity: 0;
+}
+#partner_up.body{
+    padding: 20px;
+    position: fixed;
+    left: 50%;
+    top: -20%;
+    opacity: 0;
+    transform: translate(-50%,-50%);
+    background:white;
+}
+#partner_up.active{
+    display: block;
+    opacity: 1;
+}
+#partner_up.active.body{
+    top: 25%;
+    opacity: 1;
+}
+#partner_up.body.img{
+    display: block;
+    margin-bottom: 20px;
+}
+#partner_up.body.button{
+    margin-top: 20px;
+    text-align: center;
+}
+#partner_up.body.button button{
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #009688;
+    color: white;
+}
 footer{
     height: 150px;
     max-width: 100%;

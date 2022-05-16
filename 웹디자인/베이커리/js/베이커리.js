@@ -16,7 +16,7 @@ $(document).ready(function () {
 function start(){
     $(".imgs>img").eq(0).siblings().
     css({"margin-top":"-800px"});
-    setInterval(function() {slide();},2000);
+    setInterval(function() {slide();},4000);
 }
 function slide(){
     now=now==imgs?0:now+=1;
