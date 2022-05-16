@@ -102,6 +102,51 @@ nav{
 #contents{
     height: 500px;
 }
+.notice{
+    width: 480;
+    margin-top: 20px;
+    float: left;
+}
+.motice h2{
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #666;   
+}
+.table{
+    border-collapse:collapse;
+    font-size: 0.9em;
+    color: #666666;
+    width: 430px;
+}
+.table tr>th{
+    padding: 5px 0;
+}
+.table tr>td{
+    padding: 5px;
+}
+.table tr:nth-child(2n){
+    background-color: rgba(153,153,102,0.5);
+}
+.partner{
+    margin-top: 20px;
+    float: right;
+    width: 480px;
+}
+.partner h2{
+    text-align: center;
+}
+
+.partner_info{
+    margin-top: 10px;
+    padding-left: 20%;
+}
+.partner_info img:nth-child(1){
+    width: 60%;
+    cursor: pointer;
+}
+.partner_info img:nth-child(2){
+    width: 40%;cursor: pointer;
+}
 footer{
     height: 150px;
     max-width: 100%;
