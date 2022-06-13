@@ -14,4 +14,18 @@ $(document).ready(function(){
         imgList.eq(index).animate({left: 0},1000);
         imgList.eq(prev).animate({left : -1200+'px'},1000);
     }, 3000);
+    
+    $(function(){
+        $('.con1>li>a').click(function (){
+            $(this).parent().addClass("active").siblings().removeClass("active");
+            return false;
+
+        });
+    });
+    $(".notice li:first").click(function(){
+        $(".modal_up").show();
+    });
+    $(".btn").click(function(){
+        $(".modal_up").hide();
+    });
 });

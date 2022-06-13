@@ -3,7 +3,6 @@
     margin: 0 auto;
     padding: 0;
     list-style: none;
-    background-color: #ffffff;
     color: #333333;
 }
 #wrap{
@@ -110,9 +109,11 @@ header{
     position: relative;
 }
 .con1{
-    width: 400px;
-    height: 200px;
+    width: 380px;
+    height: 180px;
     float: left;
+    padding: 10px;
+    position: relative;
 }
 .con1>li{
     float: left;
@@ -143,7 +144,7 @@ header{
     overflow: hidden;
 }
 .con1>li.active div{
-    width: 400px;
+    width: 395px;
     height: 150px;
     border: 1px solid #dddddd;
     z-index: 1;
@@ -159,17 +160,154 @@ header{
     margin-left: 10px;
     margin-right: 10px;
 }
-.con2{
-    width: 400px;
-    height: 200px;
-    float: left;
+.notice li:nth-child(2n){
+    background-color: #cccccc;
 }
-.con3{
-    width: 400px;
-    height: 200px;
+.notice li span{
+    float: right;
+}
+.notice li:hover{
+    font-weight: bold;
+}
+.gallery li{
     float: left;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.gallery img{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+.gallery li:hover{
+    opacity: 0.5;
+}
+   
+.con2 {
+    float: left; 
+    position: relative; 
+    width: 380px; 
+    height: 180px; 
+    padding: 10px;
+}
+.con2 img {
+    width: 380px;
+}
+.con2 img:hover {
+    opacity: 0.5;
+}
+.con2 span {
+    position: absolute; 
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 150px; 
+    height: 40px; 
+    text-align: center; 
+    line-height: 40px; 
+    background: rgba(0,0,0,0.7);
+    color: #fff; 
+    font-size: 20px;
+}
+
+.con3{
+    width: 380px;
+    height: 180px;
+    float: left;
+    position: relative;
+    padding: 10px
+}
+.con3 img{
+    width: 380px;
+}
+.con3 span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #ffffff;
+    background: rgba(0,0,0,0.7);
+    transform: translate(-50%, -50%);
+    line-height: 40px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
 }
 .ft-con{
     width: 1200px;
     height: 100px;
+    position: relative;
+}
+footer{
+    width: 1200px;
+    height: 100px;
+}
+.btlogo{
+    width: 200px;
+    height: 100px;
+    float: left;
+    position: absolute;
+}
+.btcontents{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 100px;
+}
+.btmenu{
+    text-align: center;
+    height: 50px;
+    width: 300px;
+}
+.btmenu li{
+    float: left;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.Copyright{
+    text-align: center;
+    height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+#modal.active{
+    display: block;
+}
+.modal_up{
+    width: 500px;
+    height: 400px;
+    position: fixed;
+    left: 40%;
+    top: 20%;
+    background-color: #ffffff;
+    display: none;
+}
+.uptitle{
+    margin-top: 30px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.upbody{
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+}
+.btn{
+    height: 20px;
+    width: 80px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+    background: #cccccc;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 }
